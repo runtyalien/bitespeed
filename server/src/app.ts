@@ -73,7 +73,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000', // Adjust this to match your frontend URL
+  origin: 'https://bitespeed-frontend-byo92eclr-omkars-projects-6b3b5f0c.vercel.app/',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204
