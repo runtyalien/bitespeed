@@ -72,12 +72,20 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
+// app.use(cors({
+//   origin: 'https://omkar-bitespeed-frontend.vercel.app/',
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//   credentials: true,
+//   optionsSuccessStatus: 204
+// }));
+
 app.use(cors({
-  origin: 'https://omkar-bitespeed-frontend.vercel.app/',
+  origin: 'https://omkar-bitespeed-frontend.vercel.app', // without the trailing slash
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204
 }));
+
 
 const port = process.env.PORT || 4000;
 
