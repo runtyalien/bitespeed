@@ -10,7 +10,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post(`process.env.REACT_APP_API_URL/api/identify`, {
+      const res = await axios.post(`/api/identify`, {
         email,
         phoneNumber
       });
