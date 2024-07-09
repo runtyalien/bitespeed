@@ -73,7 +73,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin: 'https://bitespeed-frontend-byo92eclr-omkars-projects-6b3b5f0c.vercel.app/',
+  origin: 'https://omkar-bitespeed-frontend.vercel.app/',
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
   optionsSuccessStatus: 204
