@@ -10,7 +10,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post(`https://bitespeed-backend-a0avdwwjk-omkars-projects-6b3b5f0c.vercel.app/api/identify`, {
+      const res = await axios.post(`https://omkar-bitespeed-backend.vercel.app/api/identify`, {
         email,
         phoneNumber
       });
